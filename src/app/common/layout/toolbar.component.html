@@ -1,0 +1,13 @@
+<div class="app-toolbar">
+  <div class="left-box">
+    <fa-icon [icon]="icon"></fa-icon>
+  </div>
+  <div class="middle-box">
+    {{ title }}
+  </div>
+  <div class="right-box">
+    <button [attr.title]="item.text" (click)="onItemClick(item)" *ngFor="let item of items">
+      <fa-icon [icon]="item.icon"></fa-icon>
+    </button>
+  </div>
+</div>

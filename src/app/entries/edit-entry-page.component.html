@@ -1,0 +1,53 @@
+<ul class="nav align-items-center bg-primary text-white fixed-top">
+  <li class="nav-item">
+    <button class="btn btn-icon">
+      <fa-icon [icon]="appIcon"></fa-icon>
+    </button>
+  </li>
+  <li class="nav-item flex-fill text-center">
+    Transaction
+  </li>
+  <li class="nav-item">
+    <button class="btn btn-icon">
+      <fa-icon [icon]="saveIcon">
+      </fa-icon>
+    </button>
+  </li>
+</ul>
+<div class="container pt-5">
+  <form [formGroup]="form">
+    <div class="card mb-3">
+      <div class="card-body">
+        <h5 class="card-title">Head</h5>
+        <div class="form-group">
+          <label for="title">Title</label>
+          <input formControlName="title" type="text" id="title" class="form-control">
+        </div>
+        <div class="form-group">
+          <label for="date">Date</label>
+          <input formControlName="date" type="date" id="date" class="form-control">
+        </div>
+        <div class="form-group">
+          <label for="tags">Tags</label>
+          <input formControlName="tags" type="text" id="title" class="form-control">
+        </div>
+      </div>
+    </div>
+    <div class="card mb-3">
+      <div class="card-body">
+        <h5 class="card-title">Transactions</h5>
+      </div>
+      <ul class="list-group list-group-flush">
+        <li class="list-group-item d-flex align-items-center" *ngFor="let item of transactionsForm.controls">
+          <span class="flex-fill">
+            {{ item.get('account').value }}
+          </span>
+          <span class="text-right">
+            {{ item.get('value').value }}
+            {{ item.get('commodity').value }}
+          </span>
+        </li>
+      </ul>
+    </div>
+  </form>
+</div>

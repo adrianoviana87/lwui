@@ -1,0 +1,10 @@
+.app-toolbar {
+  display: flex;
+  flex-direction: row;
+  align-items: stretch;
+  justify-content: center;
+
+  .middle-box {
+    flex: 1;
+  }
+}

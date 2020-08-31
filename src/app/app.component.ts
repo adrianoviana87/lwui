@@ -1,4 +1,6 @@
 import { Component } from '@angular/core';
+import {ToolbarItem} from './common/layout/toolbar-item';
+import { faFile, faSave, faAddressBook } from '@fortawesome/free-regular-svg-icons';
 
 @Component({
   selector: 'app-root',
@@ -6,5 +8,21 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.scss']
 })
 export class AppComponent {
-  title = 'ldg';
+  toolbarItems: Array<ToolbarItem> = [];
+  appIcon = faFile;
+
+  constructor() {
+    this.toolbarItems = [
+      {
+        text: 'Save',
+        id: 'save',
+        icon: faSave,
+      },
+      {
+        text: 'Address',
+        id: 'address',
+        icon: faAddressBook,
+      }
+    ];
+  }
 }
