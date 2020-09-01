@@ -1,7 +1,8 @@
 import { Component, OnInit } from '@angular/core';
-import { faCoins, faSave } from '@fortawesome/free-solid-svg-icons';
+import { faCoins, faSave, faPlus } from '@fortawesome/free-solid-svg-icons';
 import { FormGroup, FormArray } from '@angular/forms';
 import { EditEntryService } from './edit-entry.service';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-edit-entry-page',
@@ -11,6 +12,7 @@ import { EditEntryService } from './edit-entry.service';
 export class EditEntryPageComponent implements OnInit {
   appIcon = faCoins;
   saveIcon = faSave;
+  newTransactionIcon = faPlus;
 
   form: FormGroup;
 
@@ -18,42 +20,24 @@ export class EditEntryPageComponent implements OnInit {
     return this.service.transactionsForm;
   }
 
-  constructor(private service: EditEntryService) {
+  constructor(
+    private service: EditEntryService,
+    private router: Router) {
     this.form = this.service.form;
   }
 
   ngOnInit(): void {
-    this.service.load({
-      title: 'Groceries',
-      tags: null,
-      date: new Date().toJSON(),
-      transactions: [
-        {
-          value: -323.2,
-          account: 'Income:Job1',
-          quantity: 1,
-          commodity: 'BRL'
-        },
-        {
-          value: -33.32,
-          account: 'Income:Job2',
-          quantity: 1,
-          commodity: 'BRL'
-        },
-        {
-          value: -533.25,
-          account: 'Income:Job4',
-          quantity: 1,
-          commodity: 'BRL'
-        },
-        {
-          value: null,
-          account: 'Assets:Bank',
-          quantity: 1,
-          commodity: 'BRL'
-        },
-      ]
-    });
+    // nothing
+  }
+
+  newTransaction(): void {
+    this.service.setNewTransaction();
+    this.router.navigate(['edit-transaction']);
+  }
+
+  editTransaction(index: number): void {
+    this.service.setEditingTransaction(index);
+    this.router.navigate(['edit-transaction']);
   }
 }
 

@@ -6,12 +6,14 @@ import { AppComponent } from './app.component';
 import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
 import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 import { EditEntryPageComponent } from './entries/edit-entry-page.component';
+import { EditTransactionPageComponent } from './entries/edit-transaction-page.component';
 import { ReactiveFormsModule } from '@angular/forms';
 
 @NgModule({
   declarations: [
     AppComponent,
     EditEntryPageComponent,
+    EditTransactionPageComponent
   ],
   imports: [
     BrowserModule,

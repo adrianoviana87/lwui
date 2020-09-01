@@ -1,0 +1,40 @@
+<ul class="nav align-items-center bg-primary text-white fixed-top">
+  <li class="nav-item">
+    <button class="btn btn-icon" (click)="goBack()">
+      <fa-icon [icon]="backIcon"></fa-icon>
+    </button>
+  </li>
+  <li class="nav-item flex-fill text-center">
+    Transaction
+  </li>
+  <li class="nav-item">
+    <button class="btn btn-icon" (click)="save()">
+      <fa-icon [icon]="saveIcon">
+      </fa-icon>
+    </button>
+  </li>
+</ul>
+<div class="container pt-5">
+  <form [formGroup]="form">
+    <div class="card mb-3">
+      <div class="card-body">
+        <div class="form-group">
+          <label for="title">Account</label>
+          <input formControlName="account" type="text" id="account" class="form-control">
+        </div>
+        <div class="form-group">
+          <label for="value">Value</label>
+          <input formControlName="value" type="number" id="value" class="form-control">
+        </div>
+        <div class="form-group">
+          <label for="quantity">Quantity</label>
+          <input formControlName="quantity" type="number" id="quantity" class="form-control">
+        </div>
+        <div class="form-group">
+          <label for="commodity">Commodity</label>
+          <input formControlName="commodity" type="text" id="commodity" class="form-control">
+        </div>
+      </div>
+    </div>
+  </form>
+</div>

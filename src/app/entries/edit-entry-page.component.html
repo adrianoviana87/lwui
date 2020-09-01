@@ -35,10 +35,15 @@
     </div>
     <div class="card mb-3">
       <div class="card-body">
-        <h5 class="card-title">Transactions</h5>
+        <div class="card-title d-flex flex-direction-row align-items-center">
+          <h5 class="mb-0">Transactions</h5>
+          <button class="btn btn-icon" (click)="newTransaction()">
+            <fa-icon [icon]="newTransactionIcon"></fa-icon>
+          </button>
+        </div>
       </div>
       <ul class="list-group list-group-flush">
-        <li class="list-group-item d-flex align-items-center" *ngFor="let item of transactionsForm.controls">
+        <li class="list-group-item d-flex align-items-center" *ngFor="let item of transactionsForm.controls; let i = index" (click)="editTransaction(i)">
           <span class="flex-fill">
             {{ item.get('account').value }}
           </span>
