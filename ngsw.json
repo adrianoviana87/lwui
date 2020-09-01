@@ -1,0 +1,88 @@
+{
+  "configVersion": 1,
+  "timestamp": 1598988286751,
+  "index": "https://adrianoviana87.github.io/lwui/index.html",
+  "assetGroups": [
+    {
+      "name": "app",
+      "installMode": "prefetch",
+      "updateMode": "prefetch",
+      "cacheQueryOptions": {
+        "ignoreVary": true
+      },
+      "urls": [
+        "https://adrianoviana87.github.io/lwui/favicon.ico",
+        "https://adrianoviana87.github.io/lwui/index.html",
+        "https://adrianoviana87.github.io/lwui/main.ea51e2b4ec9be5d17f0f.js",
+        "https://adrianoviana87.github.io/lwui/manifest.webmanifest",
+        "https://adrianoviana87.github.io/lwui/polyfills.4dc3b73f451c53467b36.js",
+        "https://adrianoviana87.github.io/lwui/runtime.e227d1a0e31cbccbf8ec.js",
+        "https://adrianoviana87.github.io/lwui/styles.ebca4f0664095908f06e.css"
+      ],
+      "patterns": []
+    },
+    {
+      "name": "assets",
+      "installMode": "lazy",
+      "updateMode": "prefetch",
+      "cacheQueryOptions": {
+        "ignoreVary": true
+      },
+      "urls": [
+        "https://adrianoviana87.github.io/lwui/assets/icons/icon-128x128.png",
+        "https://adrianoviana87.github.io/lwui/assets/icons/icon-144x144.png",
+        "https://adrianoviana87.github.io/lwui/assets/icons/icon-152x152.png",
+        "https://adrianoviana87.github.io/lwui/assets/icons/icon-192x192.png",
+        "https://adrianoviana87.github.io/lwui/assets/icons/icon-384x384.png",
+        "https://adrianoviana87.github.io/lwui/assets/icons/icon-512x512.png",
+        "https://adrianoviana87.github.io/lwui/assets/icons/icon-72x72.png",
+        "https://adrianoviana87.github.io/lwui/assets/icons/icon-96x96.png",
+        "https://adrianoviana87.github.io/lwui/assets/styles/_bootswatch.scss",
+        "https://adrianoviana87.github.io/lwui/assets/styles/_buttons.scss",
+        "https://adrianoviana87.github.io/lwui/assets/styles/_containers.scss",
+        "https://adrianoviana87.github.io/lwui/assets/styles/_variables.scss"
+      ],
+      "patterns": []
+    }
+  ],
+  "dataGroups": [],
+  "hashTable": {
+    "https://adrianoviana87.github.io/lwui/assets/icons/icon-128x128.png": "dae3b6ed49bdaf4327b92531d4b5b4a5d30c7532",
+    "https://adrianoviana87.github.io/lwui/assets/icons/icon-144x144.png": "b0bd89982e08f9bd2b642928f5391915b74799a7",
+    "https://adrianoviana87.github.io/lwui/assets/icons/icon-152x152.png": "7479a9477815dfd9668d60f8b3b2fba709b91310",
+    "https://adrianoviana87.github.io/lwui/assets/icons/icon-192x192.png": "1abd80d431a237a853ce38147d8c63752f10933b",
+    "https://adrianoviana87.github.io/lwui/assets/icons/icon-384x384.png": "329749cd6393768d3131ed6304c136b1ca05f2fd",
+    "https://adrianoviana87.github.io/lwui/assets/icons/icon-512x512.png": "559d9c4318b45a1f2b10596bbb4c960fe521dbcc",
+    "https://adrianoviana87.github.io/lwui/assets/icons/icon-72x72.png": "c457e56089a36952cd67156f9996bc4ce54a5ed9",
+    "https://adrianoviana87.github.io/lwui/assets/icons/icon-96x96.png": "3914125a4b445bf111c5627875fc190f560daa41",
+    "https://adrianoviana87.github.io/lwui/assets/styles/_bootswatch.scss": "426a803d8df2efb0490e9386b81256fb33890be2",
+    "https://adrianoviana87.github.io/lwui/assets/styles/_buttons.scss": "c164627693e774f7b30bdfd4909b97ed2a7dd58e",
+    "https://adrianoviana87.github.io/lwui/assets/styles/_containers.scss": "cd3f02cb25f6524d51b9256f36bb6b0b6bcc3af3",
+    "https://adrianoviana87.github.io/lwui/assets/styles/_variables.scss": "94f9005177d4fef5274436d559e5ad7941a44d64",
+    "https://adrianoviana87.github.io/lwui/favicon.ico": "22f6a4a3bcaafafb0254e0f2fa4ceb89e505e8b2",
+    "https://adrianoviana87.github.io/lwui/index.html": "b40e61b0363e6b13e82bbe399693b9bf33ce1952",
+    "https://adrianoviana87.github.io/lwui/main.ea51e2b4ec9be5d17f0f.js": "fda4d01c97c638c91e4c675fb8a0f07d17735b65",
+    "https://adrianoviana87.github.io/lwui/manifest.webmanifest": "1d764a0608f7ea691ba4c2b65bac3d148ede8287",
+    "https://adrianoviana87.github.io/lwui/polyfills.4dc3b73f451c53467b36.js": "91f4e3fd70316d9cb796b0ec07e8fe7fbbf93b15",
+    "https://adrianoviana87.github.io/lwui/runtime.e227d1a0e31cbccbf8ec.js": "a9aafcf49f49145093fc831efd9b8e2f6c71bb9c",
+    "https://adrianoviana87.github.io/lwui/styles.ebca4f0664095908f06e.css": "b27288bd979ea14815528f6a8098d4e78c49d10e"
+  },
+  "navigationUrls": [
+    {
+      "positive": true,
+      "regex": "^\\/.*$"
+    },
+    {
+      "positive": false,
+      "regex": "^\\/(?:.+\\/)?[^/]*\\.[^/]*$"
+    },
+    {
+      "positive": false,
+      "regex": "^\\/(?:.+\\/)?[^/]*__[^/]*$"
+    },
+    {
+      "positive": false,
+      "regex": "^\\/(?:.+\\/)?[^/]*__[^/]*\\/.*$"
+    }
+  ]
+}
